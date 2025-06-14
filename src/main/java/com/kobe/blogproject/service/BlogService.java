@@ -2,9 +2,11 @@ package com.kobe.blogproject.service;
 
 import com.kobe.blogproject.domain.Article;
 import com.kobe.blogproject.dto.request.AddArticleRequest;
+import com.kobe.blogproject.dto.request.UpdateArticleRequest;
 import com.kobe.blogproject.repository.BlogRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -33,5 +35,16 @@ public class BlogService {
 	// 블로그 글 삭제하는 메서드
 	public void delete(long id) {
 		blogRepository.deleteById(id);
+	}
+
+	// 블로그 글 수정하는 메서드
+	@Transactional // 트랜잭션 메서드
+	public Article update(long id, UpdateArticleRequest request) {
+		Article article = blogRepository.findById(id)
+			.orElseThrow(() -> new IllegalArgumentException("not found: " + id));
+
+		article.update(request.getTitle(), request.getContent());
+
+		return article;
 	}
 }
