@@ -7,3 +7,11 @@ spring:
   h2:
     console:
       enabled: true
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
