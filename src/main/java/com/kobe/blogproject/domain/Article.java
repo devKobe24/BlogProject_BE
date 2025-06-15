@@ -30,6 +30,10 @@ public class Article {
 	@Column(name = "created_at")
 	private LocalDateTime createdAt;
 
+	@LastModifiedDate // 엔티티가 수정될 때 수정 시간 저장
+	@Column(name = "updated_at")
+	private LocalDateTime updatedAt;
+
 	@Builder
 	public Article(String title, String content) {
 		this.title = title;
