@@ -26,6 +26,10 @@ public class Article {
 	@Column(name = "content", nullable = false)
 	private String content;
 
+	@CreatedDate // 엔티티가 생성될 때 생성 시간 저장
+	@Column(name = "created_at")
+	private LocalDateTime createdAt;
+
 	@Builder
 	public Article(String title, String content) {
 		this.title = title;
