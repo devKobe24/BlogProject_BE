@@ -12,10 +12,10 @@ For commercial licensing, please contact: **dev.skyachieve91@gmail.com**
 <img src = "https://github.com/devKobe24/images2/blob/main/BlogProject.png?raw=true">
 
 ## 기능
-1️⃣ 블로그 글 작성 👉 CREATE
-2️⃣ 블로그 글 조회(단건 조회/전체 목록 조회) 👉 READ
-3️⃣ 블로그 글 수정 👉 UPDATE
-4️⃣ 블로그 글 삭제 👉 DELETE
+1️⃣ 블로그 글 작성 👉 CREATE</br>
+2️⃣ 블로그 글 조회(단건 조회/전체 목록 조회) 👉 READ</br>
+3️⃣ 블로그 글 수정 👉 UPDATE</br>
+4️⃣ 블로그 글 삭제 👉 DELETE</br>
 
 ### 1️⃣ 블로그 글 작성 👉 CREATE
 
@@ -41,10 +41,10 @@ For commercial licensing, please contact: **dev.skyachieve91@gmail.com**
 
 ## 활용 기술(Skills) 🛠️
 
-1️⃣ 스프링 부트
-2️⃣ 스프틸 데이터 JPA
-3️⃣ 롬복(Lombok)
-4️⃣ H2
+1️⃣ 스프링 부트</br>
+2️⃣ 스프틸 데이터 JPA</br>
+3️⃣ 롬복(Lombok)</br>
+4️⃣ H2</br>
 
 ## Blog Project 구조 🏗️
 ```
